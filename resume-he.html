@@ -135,10 +135,16 @@
         max-height: none !important;
         overflow-y: visible !important;
       }
-        .resume-buttons {
-         flex-direction: column;
-         align-items: center;
-         gap: 14px;
+      .resume-buttons {
+          flex-direction: column;
+          align-items: center;
+          gap: 14px;
+      }
+      
+      .resume-buttons .button {
+          width: 260px;
+          margin: 0;
+          text-align: center;
       }
     }
   </style>
@@ -206,18 +212,17 @@
     <h3>ריקודים נבחרים:</h3>
     <p>הורה נהריה, קסם חלילי, ירושלים של זהב, הנה שנה עוברת, בואי, בארץ אהבתי השקד פורח, ריח של יסמין, אהוב שלי, תענוגות, ילד השדה, אמן למילים, בארץ הזאת ועוד רבים וטובים...</p>
 
-<div style="text-align:center; margin-top:25px;">
+<div class="resume-buttons"
+     style="display:flex; justify-content:center; gap:12px; margin-top:25px; flex-wrap:wrap;">
 
   <a href="https://www.israelidances.com/heb_search.asp?S=A&PageNo=1&ChoreographerNameE=Oren%20Shmuel"
      class="button"
-     target="_blank"
-     style="display:inline-block; margin:0 5px;">
+     target="_blank">
      לרשימת הריקודים
   </a>
 
   <a href="publications-he.html"
-     class="button"
-     style="display:inline-block; margin:0 5px;">
+     class="button">
      פרסומים וכתבות
   </a>
 
