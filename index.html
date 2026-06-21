@@ -1,81 +1,111 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>אורן שמואל - האתר הרשמי | Oren Shmuel</title>
 
-<meta name="description" content="אורן שמואל - כוריאוגרף ויוצר במחול הישראלי ובריקודי עם ישראליים">
+<meta name="description"
+content="אורן שמואל - כוריאוגרף ויוצר במחול הישראלי ובריקודי עם ישראליים">
+
+<link rel="icon" type="image/jpeg" href="icons/favicon.jpg">
 
 <style>
 
 body{
     margin:0;
     padding:0;
-    font-family:Arial,sans-serif;
     background:#fff;
-    text-align:center;
+    font-family:Arial,sans-serif;
+    overflow-x:hidden;
 }
 
 .container{
     max-width:1200px;
     margin:auto;
-    padding:10px 20px 30px;
+    padding:10px 20px 25px;
 }
 
-.brand{
-    font-size:clamp(32px,5vw,60px);
-    font-weight:bold;
-    color:#222;
-    margin:10px 0 5px;
-}
+/* התמונה */
 
 .hero-image{
-    width:100%;
-    max-width:800px;
-    height:auto;
     display:block;
+    width:100%;
+    max-width:720px;
+    height:auto;
     margin:0 auto;
 }
+
+/* אזור השמות */
 
 .bio-row{
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-    gap:40px;
     margin-top:10px;
 }
 
+/* עברית */
+
 .bio-he{
-    text-align:right;
     flex:1;
+    text-align:right;
 }
+
+.bio-he h1{
+    margin:0;
+    color:#556b2f;
+    font-size:42px;
+}
+
+.bio-he p{
+    margin-top:8px;
+    color:#555;
+    line-height:1.5;
+    font-size:22px;
+}
+
+/* אנגלית */
 
 .bio-en{
-    text-align:left;
     flex:1;
+    text-align:left;
 }
 
-.bio-he h1,
 .bio-en h2{
     margin:0;
     color:#556b2f;
+    font-size:42px;
 }
 
-.bio-he p,
 .bio-en p{
     margin-top:8px;
-    line-height:1.5;
-    font-size:18px;
     color:#555;
+    line-height:1.5;
+    font-size:22px;
 }
+
+/* OrenDance באמצע */
+
+.brand{
+    flex:1;
+    text-align:center;
+    color:#556b2f;
+    font-weight:bold;
+    font-size:34px;
+    padding-top:5px;
+}
+
+/* כפתורים */
 
 .buttons{
     display:flex;
     justify-content:center;
     gap:20px;
-    margin-top:25px;
+    margin-top:30px;
 }
 
 .buttons a{
@@ -84,75 +114,123 @@ body{
     text-decoration:none;
     padding:14px 28px;
     border-radius:8px;
+    font-size:20px;
     font-weight:bold;
-    font-size:18px;
-    transition:.2s;
 }
 
 .buttons a:hover{
     opacity:.9;
 }
 
+/* ========================= */
+/* מובייל */
+/* ========================= */
+
 @media (max-width:768px){
+
+    .hero-image{
+        max-width:100%;
+    }
 
     .bio-row{
         flex-direction:column;
-        gap:15px;
+        align-items:center;
+        gap:20px;
+        margin-top:10px;
     }
 
     .bio-he,
-    .bio-en{
+    .bio-en,
+    .brand{
+        width:100%;
         text-align:center;
+    }
+
+    .bio-he h1{
+        font-size:30px;
+    }
+
+    .bio-en h2{
+        font-size:30px;
+    }
+
+    .bio-he p,
+    .bio-en p{
+        font-size:18px;
+    }
+
+    .brand{
+        font-size:28px;
+        order:-1;
     }
 
     .buttons{
         flex-direction:column;
         gap:12px;
+        margin-top:20px;
     }
 
     .buttons a{
         width:100%;
         box-sizing:border-box;
+        text-align:center;
     }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <div class="brand">OrenDance</div>
-
-    <img src="images/oren_blank_short.jpg"
-         alt="Oren Shmuel - Israeli Folk Dance Choreographer and Creator"
-         class="hero-image">
+    <img
+    src="images/oren-no-text.jpg"
+    alt="Oren Shmuel - Israeli Folk Dance Choreographer and Creator"
+    class="hero-image">
 
     <div class="bio-row">
 
         <div class="bio-he">
+
             <h1>אורן שמואל</h1>
+
             <p>
-                כוריאוגרף ויוצר במחול הישראלי<br>
-                ובריקודי עם ישראליים
+            כוריאוגרף ויוצר במחול הישראלי<br>
+            ובריקודי עם ישראליים
             </p>
+
+        </div>
+
+        <div class="brand">
+            OrenDance
         </div>
 
         <div class="bio-en">
+
             <h2>Oren Shmuel</h2>
+
             <p>
-                Israeli Folk Dance<br>
-                Choreographer and Creator
+            Israeli Folk Dance<br>
+            Choreographer and Creator
             </p>
+
         </div>
 
     </div>
 
     <div class="buttons">
-        <a href="resume-he.html">פרופיל בעברית</a>
-        <a href="resume-en.html">English Profile</a>
+
+        <a href="resume-he.html">
+            פרופיל בעברית
+        </a>
+
+        <a href="resume-en.html">
+            English Profile
+        </a>
+
     </div>
 
 </div>
