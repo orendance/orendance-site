@@ -4,205 +4,117 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>אורן שמואל - האתר הרשמי | Oren Shmuel - Official Website</title>
+<title>אורן שמואל - האתר הרשמי | Oren Shmuel</title>
 
-<link rel="icon" type="image/jpeg" href="icons/favicon.jpg">
-
-  <!-- ========= SCHEMA ========= -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://orendance.co.il/#oren-shmuel",
-    "name": "Oren Shmuel",
-    "alternateName": "אורן שמואל",
-    "url": "https://orendance.co.il/",
-    "image": "https://orendance.co.il/images/oren-shmuel-official.jpg",
-    "description": "Official website of Oren Shmuel, Israeli folk dance choreographer and creator",
-    "jobTitle": "Israeli folk dance choreographer and creator",
-    "sameAs": [
-      "https://www.wikidata.org/wiki/Q137753856",
-      "https://he.wikipedia.org/wiki/אורן_שמואל",
-      "https://www.youtube.com/@orendance",
-      "https://www.facebook.com/orendances",
-      "https://www.instagram.com/orendance/",
-      "https://x.com/orendance",
-      "https://www.linkedin.com/in/orendance",
-      "https://g.page/r/CdHa-vrG31TYEBM"
-    ]
-  }
-  </script>
-
-<meta name="description" content="Official Website of Oren Shmuel, Israeli folk dance choreographer and creator">
+<meta name="description" content="אורן שמואל - כוריאוגרף ויוצר במחול הישראלי ובריקודי עם ישראליים">
 
 <style>
 
-/* בסיס */
-html, body {
-  margin:0;
-  padding:0;
-  width:100%;
-  min-height:100vh;
-  overflow-x:hidden;
-  font-family:Arial;
-  background:#fff;
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background:#fff;
+    text-align:center;
 }
 
-/* HERO */
-.image-container {
-  position:relative;
-  width:100%;
-  min-height:100vh;
-  background-image:url('images/oren.jpg');
-  background-size:contain;
-  background-repeat:no-repeat;
-  background-position:center 8vh;
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:10px 20px 30px;
 }
 
-/* כותרת */
-.title-overlay {
-  text-align:center;
-  font-size:6vw;
-  color:#006633;
-  font-weight:bold;
-  padding-top:10px;
-}
-
-/* 🔙 כפתור חזרה */
-.back-top {
-  display:none;
-  text-align:center;
-}
-
-/* מובייל בלבד */
-@media (max-width:480px) and (orientation:portrait) {
-
-  .back-top {
-    display:none;
-    margin:6px auto 4px auto; /* 🔥 מיקום מאוזן באמצע */
-  }
-
-  .back-top button {
-    background:#ff9800;
-    color:white;
-    border:none;
-    padding:8px 14px;
-    border-radius:6px;
-    font-size:14px;
+.brand{
+    font-size:clamp(32px,5vw,60px);
     font-weight:bold;
-    cursor:pointer;
-  }
-
+    color:#222;
+    margin:10px 0 5px;
 }
 
-/* קפל */
-.seo-box {
-  position:absolute;
-  bottom:5px;
-  width:100%;
-  text-align:center;
-}
-
-/* תוכן */
-details {
-  background:#fff;
-  max-width:700px;
-  margin:auto;
-  padding:10px;
-  border-radius:10px;
-}
-
-summary {
-  cursor:pointer;
-  color:#006633;
-  font-weight:bold;
-  font-size:22px;
-}
-
-.seo-content {
-  margin-top:15px;
-  line-height:1.7;
-}
-
-/* כפתורים */
-.dual-buttons {
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
-  margin-top:15px;
-}
-
-.dual-buttons a {
-  flex:1;
-  background:#2e7d32;
-  color:white;
-  padding:10px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-  text-align:center;
-}
-
-/* מצב פתוח */
-.image-container:has(details[open]) {
-  background-image:none;
-  min-height:auto;
-}
-
-.image-container:has(details[open]) .seo-box {
-  position:relative;
-  bottom:auto;
-  margin-top:10px;
-}
-
-/* 📱 מובייל */
-@media (max-width:480px) and (orientation:portrait) {
-
-  .image-container {
-    background-position:center 12vh;
-  }
-
-  .seo-box {
-    bottom:250px;
-  }
-
-  /* הסתרת הפאנל */
-  .image-container:has(details[open]) summary {
-    display:none;
-  }
-
-  /* הצגת כפתור */
-  .image-container:has(details[open]) .back-top {
+.hero-image{
+    width:100%;
+    max-width:800px;
+    height:auto;
     display:block;
-  }
-
-  /* 🔥🔥🔥 ביטול הרווח המיותר */
-  .image-container:has(details[open]) details {
-    padding-top:0 !important;
-    margin-top:0 !important;
-  }
-
-  .image-container:has(details[open]) .seo-content {
-    margin-top:0 !important;
-    padding-top:0 !important;
-  }
-
-  .image-container:has(details[open]) .seo-content h2:first-child {
-    margin-top:0 !important;
-    padding-top:0 !important;
-  }
-
-  .image-container:has(details[open]) .title-overlay {
-    margin-bottom:5px !important;
-  }
-
+    margin:0 auto;
 }
 
-/* מובייל קטן */
-@media (max-width:380px) {
-  .title-overlay {
-    font-size:8vw;
-  }
+.bio-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
+    margin-top:10px;
+}
+
+.bio-he{
+    text-align:right;
+    flex:1;
+}
+
+.bio-en{
+    text-align:left;
+    flex:1;
+}
+
+.bio-he h1,
+.bio-en h2{
+    margin:0;
+    color:#556b2f;
+}
+
+.bio-he p,
+.bio-en p{
+    margin-top:8px;
+    line-height:1.5;
+    font-size:18px;
+    color:#555;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:25px;
+}
+
+.buttons a{
+    background:#556b2f;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:18px;
+    transition:.2s;
+}
+
+.buttons a:hover{
+    opacity:.9;
+}
+
+@media (max-width:768px){
+
+    .bio-row{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .bio-he,
+    .bio-en{
+        text-align:center;
+    }
+
+    .buttons{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .buttons a{
+        width:100%;
+        box-sizing:border-box;
+    }
+
 }
 
 </style>
@@ -210,58 +122,40 @@ summary {
 
 <body>
 
-<div class="image-container">
+<div class="container">
 
-  <div class="title-overlay">OrenDance</div>
+    <div class="brand">OrenDance</div>
 
-  <!-- 🔙 כפתור חזרה -->
-  <div class="back-top">
-    <button onclick="closePanel()">⬆ חזרה</button>
-  </div>
+    <img src="images/oren_blank_short.jpg"
+         alt="Oren Shmuel - Israeli Folk Dance Choreographer and Creator"
+         class="hero-image">
 
-  <div class="seo-box">
-    <details id="panel">
+    <div class="bio-row">
 
-      <summary>
-        ▼ כניסה לפרופיל / Enter ▼<br>
-        <span style="font-size:14px;">
-          לחצו לצפייה בפרופיל המלא | Click to view full profile
-        </span>
-      </summary>
-
-      <div class="seo-content">
-
-        <h2>אורן שמואל – כוריאוגרף ויוצר במחול הישראלי ובריקודי עם ישראליים</h2>
-
-        <p>
-        אורן שמואל הוא יוצר ריקודי עם ישראליים וכוריאוגרף, בעל ניסיון רב שנים בארץ ובעולם.
-        </p>
-
-        <h2>Oren Shmuel – Israeli Folk Dance Choreographer and Creator</h2>
-
-        <p>
-        Oren Shmuel is an Israeli folk dance creator and choreographer with many years of experience.
-        </p>
-
-        <div class="dual-buttons">
-          <a href="resume-he.html">כניסה</a>
-          <a href="resume-en.html">ENTER</a>
+        <div class="bio-he">
+            <h1>אורן שמואל</h1>
+            <p>
+                כוריאוגרף ויוצר במחול הישראלי<br>
+                ובריקודי עם ישראליים
+            </p>
         </div>
 
-      </div>
+        <div class="bio-en">
+            <h2>Oren Shmuel</h2>
+            <p>
+                Israeli Folk Dance<br>
+                Choreographer and Creator
+            </p>
+        </div>
 
-    </details>
-  </div>
+    </div>
+
+    <div class="buttons">
+        <a href="resume-he.html">פרופיל בעברית</a>
+        <a href="resume-en.html">English Profile</a>
+    </div>
 
 </div>
-
-<script>
-function closePanel() {
-  const panel = document.getElementById('panel');
-  panel.removeAttribute('open');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-</script>
 
 </body>
 </html>
