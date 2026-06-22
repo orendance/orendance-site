@@ -3,21 +3,42 @@
 
   <url>
     <loc>https://orendance.co.il/</loc>
-    <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
+    <loc>https://orendance.co.il/resume-he.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://orendance.co.il/resume-en.html</loc>
-    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://orendance.co.il/publications-he.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://orendance.co.il/publications-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://orendance.co.il/hine-shana-overet-he.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://orendance.co.il/resume-he.html</loc>
-    <lastmod>2026-04-04</lastmod>
+    <loc>https://orendance.co.il/hine-shana-overet-en.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
